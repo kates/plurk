@@ -17,6 +17,7 @@ spec = Gem::Specification.new do |spec|
 
   spec.author            = "kates"
   spec.email             = "katesgasis@gmail.com"
+  spec.homepage          = "http://github.com/kates/plurk"
 
   spec.description       = <<END_DESC
 An unofficial ruby Plurk client.
