@@ -12,8 +12,12 @@ A Plurk client in Ruby using the brand, spanking, new API found in [http://www.p
     plurk = Plurk::Client.new api_key
     plurk.login :username => "username", :password => "password"
     plurk.get_plurks
+    plurk.plurk_add :content => "plurking yay (lmao)", :qualifier => "says"
     
 
 ## File upload ##
     plurk.upload_picture :attachment => {:file => "image.jpg", :name => "image"}
     
+See [http://www.plurk.com/API](http://www.plurk.com/API) for the return values.
+
+Released under MIT License.
