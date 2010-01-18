@@ -9,9 +9,9 @@ lib     = File.join(dir, "lib", "plurk.rb")
 
 spec = Gem::Specification.new do |spec|
   spec.name     = "plurk"
-  spec.version  = "1.0"
+  spec.version  = "2.0"
   spec.platform = Gem::Platform::RUBY
-  spec.summary  = "A Plurk ruby library"
+  spec.summary  = "A Plurk ruby client"
   spec.files    = Dir.glob("{lib}/**/*.rb")
   spec.require_path      = 'lib'
 
@@ -19,9 +19,8 @@ spec = Gem::Specification.new do |spec|
   spec.email             = "katesgasis@gmail.com"
 
   spec.description       = <<END_DESC
-An unofficial ruby Plurk library.
+An unofficial ruby Plurk client.
 END_DESC
-  spec.add_dependency("mechanize")
   spec.add_dependency("json")
 end
 
