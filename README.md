@@ -16,7 +16,7 @@ A Plurk client in Ruby using the brand, spanking, new API found in [http://www.p
     
 
 ## File upload ##
-    plurk.upload_picture :attachment => {:file => "image.jpg", :name => "image"}
+    plurk.upload_picture "/path/to/image.jpg"
     
 See [http://www.plurk.com/API](http://www.plurk.com/API) for the return values.
 

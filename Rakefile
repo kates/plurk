@@ -9,7 +9,7 @@ lib     = File.join(dir, "lib", "plurk.rb")
 
 spec = Gem::Specification.new do |spec|
   spec.name     = "plurk"
-  spec.version  = "2.0"
+  spec.version  = "2.1"
   spec.platform = Gem::Platform::RUBY
   spec.summary  = "A Plurk ruby client"
   spec.files    = Dir.glob("{lib}/**/*.rb")

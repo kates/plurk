@@ -126,7 +126,7 @@ module Plurk
     
     # params: content, qualifier 
     def plurk_add(params={})
-      send_request(:plurk_add, params)
+      send_request(:plurk_add, {:qualifier => "says"}.merge(params))
     end
     
     # params: plurk_id
@@ -155,8 +155,8 @@ module Plurk
     end
     
     # params: attachment[name]=image, attachment[file]
-    def upload_picture(params={})
-      file_upload(:upload_picture, params)
+    def upload_picture(filename)
+      file_upload(:upload_picture, {:attachment => {:file => filename, :name => "image"}})
     end
     
     # params: plurk_id, from_response
