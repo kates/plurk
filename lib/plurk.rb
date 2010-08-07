@@ -42,7 +42,7 @@ module Plurk
     :alert_history => {:path => "/API/Alerts/getHistory", :login_required => true},
     :add_as_fan => {:path => "/API/Alerts/addAsFan", :login_required => true, :required_params => [:user_id]},
     :add_all_as_fan => {:path => "/API/Alerts/addAllAsFan", :login_required => true},
-    :add_all_as_friends => {:path => "/API/Alerts/addAllAsFriend", :login_required => true},
+    :add_all_as_friends => {:path => "/API/Alerts/addAllAsFriends", :login_required => true},
     :add_as_friend => {:path => "/API/Alerts/addAsFriend", :login_required => true, :required_params => [:user_id]},
     :deny_friendship => {:path => "/API/Alerts/denyFriendship", :login_required => true, :required_params => [:user_id]},
     :remove_notification => {:path => "/API/Alerts/removeNotification", :login_required => true, :required_params => [:user_id]},
