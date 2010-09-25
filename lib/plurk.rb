@@ -362,10 +362,14 @@ module Plurk
     # stolen from http://boonedocks.net/mike/archives/162-Determining-Image-File-Types-in-Ruby.html
     def image_type(file)
       case IO.read(file, 10)
-        when /^GIF8/: 'image/gif'
-        when /^\x89PNG/: 'image/png'
-        when /^\xff\xd8\xff\xe0\x00\x10JFIF/: 'image/jpeg'
-        when /^\xff\xd8\xff\xe1(.*){2}Exif/: 'image/jpeg'
+        when /^GIF8/
+           'image/gif'
+        when /^\x89PNG/
+           'image/png'
+        when /^\xff\xd8\xff\xe0\x00\x10JFIF/
+           'image/jpeg'
+        when /^\xff\xd8\xff\xe1(.*){2}Exif/
+           'image/jpeg'
       else 'application/octet-stream'
       end
     end
